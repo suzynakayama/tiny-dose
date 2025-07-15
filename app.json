@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tinydose.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/tinyDose.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tinydose.app"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1d5f1510-8960-481c-9283-4d5e729c40a3"
+      }
+    },
+    "owner": "suzynakayama"
   }
 }
