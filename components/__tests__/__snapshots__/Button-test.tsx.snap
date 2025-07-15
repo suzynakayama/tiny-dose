@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  accessibilityHint="Press to perform an action"
+  accessibilityLabel="Click Me"
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#01CDD4",
+      "borderRadius": 30,
+      "elevation": 6,
+      "opacity": 1,
+      "paddingHorizontal": 5,
+      "paddingVertical": 12,
+      "shadowColor": "#031F72",
+      "shadowOffset": {
+        "height": 6,
+        "width": 4,
+      },
+      "shadowOpacity": 0.25,
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#fff",
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "textShadowColor": "#031F72",
+          "textShadowOffset": {
+            "height": 1,
+            "width": 1,
+          },
+          "textShadowRadius": 2,
+        },
+        undefined,
+      ]
+    }
+  >
+    Click Me
+  </Text>
+</View>
+`;

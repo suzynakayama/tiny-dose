@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with dosage and max dose 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "marginBottom": 10,
+    }
+  }
+>
+  <Image
+    source={
+      {
+        "testUri": "../../../assets/images/syringe.png",
+      }
+    }
+    style={
+      {
+        "height": 115,
+        "maxWidth": 180,
+      }
+    }
+  />
+  <Text
+    style={
+      {
+        "fontSize": 16,
+        "marginBottom": 10,
+      }
+    }
+  >
+    Your child's dose:
+  </Text>
+  <Text
+    style={
+      {
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    5 ml
+  </Text>
+  <Text
+    style={
+      {
+        "fontSize": 14,
+        "fontStyle": "italic",
+        "marginTop": 15,
+      }
+    }
+  >
+    ⚠️ Do not exceed 4 doses in 24 hours.
+  </Text>
+</View>
+`;
+
+exports[`renders correctly without max dose 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "marginBottom": 10,
+    }
+  }
+>
+  <Image
+    source={
+      {
+        "testUri": "../../../assets/images/syringe.png",
+      }
+    }
+    style={
+      {
+        "height": 115,
+        "maxWidth": 180,
+      }
+    }
+  />
+  <Text
+    style={
+      {
+        "fontSize": 16,
+        "marginBottom": 10,
+      }
+    }
+  >
+    Your child's dose:
+  </Text>
+  <Text
+    style={
+      {
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    10 ml
+  </Text>
+</View>
+`;

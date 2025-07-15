@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+[
+  <Text>
+    Child Age:
+  </Text>,
+  <View
+    accessibilityLabel="age-selector"
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "maxWidth": 250,
+          "padding": 3,
+        },
+      ]
+    }
+    testID="age-selector"
+  >
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "backgroundColor": "#f6bdc0",
+            "borderRadius": 50,
+            "height": 40,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "borderColor": "#C9C9C9",
+              "borderRadius": 50,
+              "borderWidth": 0,
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            accessibilityLabel="between-1-and-6-months-old"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "normal",
+                    "textAlign": "center",
+                  },
+                  {
+                    "fontWeight": "bold",
+                    "textShadowColor": "#031F72",
+                    "textShadowOffset": {
+                      "height": 1,
+                      "width": 1,
+                    },
+                    "textShadowRadius": 2,
+                  },
+                ]
+              }
+            >
+              1-6 months
+            </Text>
+          </View>
+          <View
+            accessibilityLabel="over-6-months-old"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#333",
+                    "fontSize": 14,
+                    "fontWeight": "normal",
+                    "textAlign": "center",
+                  },
+                  {},
+                ]
+              }
+            >
+              over 6 months
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>,
+]
+`;
