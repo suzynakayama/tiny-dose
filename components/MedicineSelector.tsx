@@ -1,16 +1,16 @@
-import { StyleSheet } from 'react-native';
-import { Dropdown } from 'react-native-element-dropdown';
-import React from 'react';
-import { MedicineOption } from '@/Types/medicineCalculator.types';
-import { medicineOptions } from '@/Types/medicineCalculator.contants';
+import { StyleSheet } from 'react-native'
+import { Dropdown } from 'react-native-element-dropdown'
+import React from 'react'
+import { MedicineOption } from '@/Types/medicineCalculator.types'
+import { medicineOptions } from '@/Types/medicineCalculator.contants'
 
 // This component renders a dropdown for selecting a medicine from the medicineOptions array.
 
 interface MedicineSelectorProps {
-  isDropdownFocused: boolean;
-  setIsDropdownFocused: (isFocused: boolean) => void;
-  medicine: MedicineOption | undefined;
-  setMedicine: (medicine: MedicineOption) => void;
+  isDropdownFocused: boolean
+  setIsDropdownFocused: (isFocused: boolean) => void
+  medicine: MedicineOption | undefined
+  setMedicine: (medicine: MedicineOption) => void
 }
 
 export default function MedicineSelector({
@@ -37,24 +37,28 @@ export default function MedicineSelector({
       onFocus={() => setIsDropdownFocused(true)}
       onBlur={() => setIsDropdownFocused(false)}
       onChange={item => {
-        setMedicine(item);
-        setIsDropdownFocused(false);
+        setMedicine(item)
+        setIsDropdownFocused(false)
       }}
       testID='medicine-selector'
     />
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   dropdown: {
-    minWidth: '95%',
-    height: 40,
-    borderColor: 'gray',
-    borderWidth: 0.5,
-    borderRadius: 12,
-    paddingHorizontal: 8,
-    elevation: 2,
     backgroundColor: '#fff',
+    borderColor: 'gray',
+    borderRadius: 12,
+    borderWidth: 0.5,
+    elevation: 2,
+    height: 40,
+    minWidth: '95%',
+    paddingHorizontal: 8,
+  },
+  inputSearchStyle: {
+    fontSize: 16,
+    height: 40,
   },
   placeholderStyle: {
     fontSize: 16,
@@ -62,8 +66,4 @@ const styles = StyleSheet.create({
   selectedTextStyle: {
     fontSize: 16,
   },
-  inputSearchStyle: {
-    height: 40,
-    fontSize: 16,
-  },
-});
+})

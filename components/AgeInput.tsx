@@ -1,14 +1,14 @@
-import { Text, StyleSheet } from 'react-native';
-import React from 'react';
-import BasicSwitchSelector from './BasicSwitchSelector';
-import { ageOptions } from '@/Types/medicineCalculator.contants';
-import { SwitchType } from '@/Types/medicineCalculator.types';
+import { Text, StyleSheet } from 'react-native'
+import React from 'react'
+import BasicSwitchSelector from './BasicSwitchSelector'
+import { ageOptions } from '@/Types/medicineCalculator.contants'
+import { SwitchType } from '@/Types/medicineCalculator.types'
 
 // This component allows the user to select the age of the child
 // It uses a SwitchSelector to toggle between the ageOptions array
 
 interface AgeInputProps {
-  changeSwitch: (value: string, type: SwitchType) => void;
+  changeSwitch: (value: string, type: SwitchType) => void
 }
 
 export default function AgeInput({ changeSwitch }: AgeInputProps) {
@@ -24,7 +24,7 @@ export default function AgeInput({ changeSwitch }: AgeInputProps) {
         selectorStyles={styles.ageSelector}
       />
     </>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
     maxWidth: 250,
     padding: 3,
   },
-});
+})

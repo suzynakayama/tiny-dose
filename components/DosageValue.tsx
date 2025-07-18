@@ -1,13 +1,13 @@
-import { StyleSheet, Text, Image, View } from 'react-native';
-import React from 'react';
-import SyringeImage from '@/assets/images/syringe.png';
+import { StyleSheet, Text, Image, View } from 'react-native'
+import React from 'react'
+import SyringeImage from '@/assets/images/syringe.png'
 
 // This component displays the calculated dosage value and maximum dose information.
 // It contains the image of a syringe, the dosage value, and an optional maximum dose message.
 
 interface DosageValueProps {
-  dosage: string;
-  maxDose: number | null;
+  dosage: string
+  maxDose: number | null
 }
 
 export default function DosageValue({ dosage, maxDose }: DosageValueProps) {
@@ -17,23 +17,17 @@ export default function DosageValue({ dosage, maxDose }: DosageValueProps) {
       <Text style={styles.dosageText}>Your child's dose:</Text>
       <Text style={styles.dosageValue}>{`${dosage}`}</Text>
       {maxDose && (
-        <Text
-          style={styles.maxDose}
-        >{`⚠️ Do not exceed ${maxDose} doses in 24 hours.`}</Text>
+        <Text style={styles.maxDose}>{`⚠️ Do not exceed ${maxDose} doses in 24 hours.`}</Text>
       )}
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   dosageContainer: {
-    flex: 1,
     alignItems: 'center',
+    flex: 1,
     marginBottom: 10,
-  },
-  image: {
-    maxWidth: 180,
-    height: 115,
   },
   dosageText: {
     fontSize: 16,
@@ -44,9 +38,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  image: {
+    height: 115,
+    maxWidth: 180,
+  },
   maxDose: {
     fontSize: 14,
-    marginTop: 15,
     fontStyle: 'italic',
+    marginTop: 15,
   },
-});
+})

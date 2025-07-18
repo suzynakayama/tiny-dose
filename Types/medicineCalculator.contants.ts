@@ -3,7 +3,7 @@ import {
   MedicineOptions,
   WeightOptions,
   TimesPerDays,
-} from './medicineCalculator.types';
+} from './medicineCalculator.types'
 
 export const ageOptions: AgeOptions = [
   {
@@ -16,12 +16,12 @@ export const ageOptions: AgeOptions = [
     value: 'over-6',
     accessibilityLabel: 'over-6-months-old',
   },
-];
+]
 
 export const weightOptions: WeightOptions = [
   { label: 'kg', value: 'kg', accessibilityLabel: 'switch-to-kg' },
   { label: 'lb', value: 'lb', accessibilityLabel: 'switch-to-lb' },
-];
+]
 
 export const medicineOptions: MedicineOptions = [
   {
@@ -112,10 +112,10 @@ export const medicineOptions: MedicineOptions = [
     type: 'tablet',
     dosageMg: 400,
   },
-];
+]
 
 export const timesPerDay: TimesPerDays = [
   { label: '8 hours', value: 'less-6' },
   { label: '6 hours', value: 'over-6' },
   { label: '4 hours', value: 'acetaminophen', maxDose: 5 },
-];
+]

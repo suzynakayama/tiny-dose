@@ -1,19 +1,15 @@
-import { StyleSheet } from 'react-native';
-import React from 'react';
-import SwitchSelector from 'react-native-switch-selector';
-import {
-  AgeOptions,
-  SwitchType,
-  WeightOptions,
-} from '@/Types/medicineCalculator.types';
+import { StyleSheet } from 'react-native'
+import React from 'react'
+import SwitchSelector from 'react-native-switch-selector'
+import { AgeOptions, SwitchType, WeightOptions } from '@/Types/medicineCalculator.types'
 
 interface SelectorProps {
-  accessibilityLabel: string;
-  testID: string;
-  options: AgeOptions | WeightOptions;
-  changeSwitch: (value: string, type: SwitchType) => void;
-  switchType: SwitchType;
-  selectorStyles: {};
+  accessibilityLabel: string
+  testID: string
+  options: AgeOptions | WeightOptions
+  changeSwitch: (value: string, type: SwitchType) => void
+  switchType: SwitchType
+  selectorStyles: unknown
 }
 
 export default function BasicSwitchSelector({
@@ -39,7 +35,7 @@ export default function BasicSwitchSelector({
       backgroundColor='#f6bdc0'
       style={selectorStyles}
     />
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -49,4 +45,4 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
   },
-});
+})
