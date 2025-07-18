@@ -27,7 +27,7 @@ export default function RootLayout() {
         // An array of test device IDs to allow.
         testDeviceIdentifiers: ['EMULATOR'],
       })
-      .initialize()
+      .then(() => mobileAds().initialize())
       .then(() => {
         // Initialization complete!
         setAdsLoaded(true)

@@ -11,7 +11,7 @@ import WeightInput from '@/components/WeightInput'
 import AgeInput from '@/components/AgeInput'
 import DosageValue from '@/components/DosageValue'
 import TinyDoseImage from '@/assets/images/tinyDose.png'
-import BannerAdComponent from '@/components/BannerAd'
+import BannerAds from '@/components/BannerAds'
 
 // This is the medicine calculator screen of the app
 // It contains the logic to calculate the correct dosage of ibuprofen and acetaminophen
@@ -133,7 +133,7 @@ export default function MedicineCalculatorScreen() {
             textStyle={styles.findDosageButtonText}
           />
           {medicine && dosage && <DosageValue dosage={dosage} maxDose={maxDose} />}
-          <BannerAdComponent />
+          <BannerAds extraStyles={styles.bannerStyles} />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
@@ -146,6 +146,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 23,
+  },
+  bannerStyles: {
+    alignSelf: 'center',
   },
   container: {
     backgroundColor: '#f8f9fa',

@@ -10,8 +10,8 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "prettier": "prettier --write .",
-    "lint": "prettier . eslint .",
-    "format:fix": "prettier . --write eslint . --fix",
+    "lint": "eslint . --fix",
+    "format:fix": "npm run prettier && npm run lint",
     "build:dev": "eas build --profile development",
     "build:staging": "eas build --profile preview",
     "build:prod": "eas build --profile production"

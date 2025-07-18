@@ -4,7 +4,7 @@ import { Linking, StyleSheet, Text, Image, ScrollView } from 'react-native'
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
 import MedicineImage from '@/assets/images/medicine.png'
 import Button from '@/components/Button'
-import BannerAdComponent from '@/components/BannerAd'
+import BannerAds from '@/components/BannerAds'
 
 // This is the home screen of the app
 // It provides a brief introduction to the app and a button to navigate to the medicine calculator screen
@@ -39,7 +39,7 @@ export default function HomeScreen() {
             text="Let's go!"
             buttonStyle={styles.button}
           />
-          <BannerAdComponent />
+          <BannerAds />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
